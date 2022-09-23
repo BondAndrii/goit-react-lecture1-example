@@ -1,21 +1,24 @@
-export const Recipe = ({ recipe:{ name, time, servings, calories } }) => {
+import { Card, InfoConteiner, RecipeName, InfoBlock, Label } from './Recipe.styled';
+import {BsFillAlarmFill, BsFillGrid3X2GapFill} from 'react-icons/bs';
+import {BiAperture} from 'react-icons/bi';
+export const Recipe = ({ recipe: { name, time, servings, calories } }) => {
         return (
-        <article>
-            <h2>{name}</h2>
-            <div>
-                <div>
-                    <span>Icon</span>
-                        <p>{time} хвилин</p>
-                </div>
-                <div>
-                    <span>Icon</span>
-                        <p>{ servings} частин</p>
-                </div>
-                <div>
-                    <span>Icon</span>
-                        <p>{ calories} калорій</p>
-                </div>
-            </div>
-        </article>
+        <Card>
+            <RecipeName>{name}</RecipeName>
+            <InfoConteiner>
+                <InfoBlock>
+                        <BsFillAlarmFill size={16} />
+                        <Label>{time} хвилин</Label>
+                </InfoBlock>
+                <InfoBlock>
+                    <BsFillGrid3X2GapFill size={16} />
+                        <Label>{ servings} частин</Label>
+                </InfoBlock>
+                <InfoBlock>
+                    <BiAperture size={16} />
+                        <Label>{ calories} калорій</Label>
+                </InfoBlock>
+            </InfoConteiner>
+        </Card>
     );
 };
