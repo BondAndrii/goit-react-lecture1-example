@@ -1,6 +1,7 @@
 import { Card, InfoConteiner, RecipeName, InfoBlock, Label } from './Recipe.styled';
 import {BsFillAlarmFill, BsFillGrid3X2GapFill} from 'react-icons/bs';
-import {BiAperture} from 'react-icons/bi';
+import { BiAperture } from 'react-icons/bi';
+import PropTypes from 'prop-types';
 export const Recipe = ({ recipe: { name, time, servings, calories } }) => {
         return (
         <Card>
@@ -19,6 +20,16 @@ export const Recipe = ({ recipe: { name, time, servings, calories } }) => {
                         <Label>{ calories} калорій</Label>
                 </InfoBlock>
             </InfoConteiner>
-        </Card>
+            </Card>
     );
 };
+Recipe.propTypes = {
+    recipe: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        time: PropTypes.string.isRequired,
+        servings: PropTypes.number.isRequired,
+        calories: PropTypes.number.isRequired,
+    }
+
+    )
+}
