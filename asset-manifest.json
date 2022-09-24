@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/goit-react-lecture1-example/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-lecture1-example/static/js/main.afd09a4a.js",
+    "main.js": "/goit-react-lecture1-example/static/js/main.2ccf5063.js",
     "index.html": "/goit-react-lecture1-example/index.html",
     "main.7acaea2f.css.map": "/goit-react-lecture1-example/static/css/main.7acaea2f.css.map",
-    "main.afd09a4a.js.map": "/goit-react-lecture1-example/static/js/main.afd09a4a.js.map"
+    "main.2ccf5063.js.map": "/goit-react-lecture1-example/static/js/main.2ccf5063.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.afd09a4a.js"
+    "static/js/main.2ccf5063.js"
   ]
 }
